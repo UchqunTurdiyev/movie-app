@@ -18,16 +18,16 @@ export default function Documentary({ isDocumentary }) {
 			items: 3,
 		},
 		tablet: {
-			breakpoint: { max: 1024, min: 464 },
+			breakpoint: { max: 1024, min: 484 },
 			items: 2,
 		},
 		mobile: {
-			breakpoint: { max: 464, min: 0 },
+			breakpoint: { max: 484, min: 0 },
 			items: 1,
 		},
 	};
 	return (
-		<Box w={'full'} h={'400px'} px={10} my={10}>
+		<Box w={'full'} h={'400px'} px={{ base: 4, md: 10 }} my={10}>
 			<Carousel responsive={responsive}>
 				{/* <Flex w={'full'} h={'500px'} flexWrap={'wrap'} gap={4}> */}
 				{isDocumentary.map(el => {

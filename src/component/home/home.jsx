@@ -42,43 +42,43 @@ export default function Home() {
 	return (
 		<Box>
 			<Hero />
-			<Heading pl={10} fontSize={'3xl'}>
+			<Heading pl={{ base: 4, md: 10 }} fontSize={'3xl'}>
 				Top Rated
 			</Heading>
 			<TopRated isTopRated={isTopRated} />
-			<Heading pl={10} fontSize={'3xl'}>
+			<Heading pl={{ base: 4, md: 10 }} fontSize={'3xl'}>
 				Popular
 			</Heading>
 			<Popular movies={movies} />
-			<Heading pl={10} fontSize={'3xl'}>
+			<Heading pl={{ base: 4, md: 10 }} fontSize={'3xl'}>
 				Trending
 			</Heading>
 			<Trending isTrending={isTrending} />
-			<Heading pl={10} fontSize={'3xl'}>
+			<Heading pl={{ base: 4, md: 10 }} fontSize={'3xl'}>
 				Upcoming
 			</Heading>
 			<UpComing isUpcoming={isUpcoming} />
-			<Heading pl={10} fontSize={'3xl'}>
+			<Heading pl={{ base: 4, md: 10 }} fontSize={'3xl'}>
 				Horror
 			</Heading>
 			<Horror isHorror={isHorror} />
-			<Heading pl={10} fontSize={'3xl'}>
+			<Heading pl={{ base: 4, md: 10 }} fontSize={'3xl'}>
 				Tv top rated
 			</Heading>
 			<TvTopRated isTvtopRated={isTvtopRated} />
-			<Heading pl={10} fontSize={'3xl'}>
+			<Heading pl={{ base: 4, md: 10 }} fontSize={'3xl'}>
 				Documentary
 			</Heading>
 			<Documentary isDocumentary={isDocumentary} />
-			<Heading pl={10} fontSize={'3xl'}>
+			<Heading pl={{ base: 4, md: 10 }} fontSize={'3xl'}>
 				History
 			</Heading>
 			<History isHistory={isHistory} />
-			<Heading pl={10} fontSize={'3xl'}>
+			<Heading pl={{ base: 4, md: 10 }} fontSize={'3xl'}>
 				Comedy
 			</Heading>
 			<Comedy isComedy={isComedy} />
-			<Heading pl={10} fontSize={'3xl'}>
+			<Heading pl={{ base: 4, md: 10 }} fontSize={'3xl'}>
 				Family
 			</Heading>
 			<Family isFamily={isFamily} />

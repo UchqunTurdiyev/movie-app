@@ -18,16 +18,16 @@ export default function TvTopRated({ isTvtopRated }) {
 			items: 3,
 		},
 		tablet: {
-			breakpoint: { max: 1024, min: 464 },
+			breakpoint: { max: 1024, min: 484 },
 			items: 2,
 		},
 		mobile: {
-			breakpoint: { max: 464, min: 0 },
+			breakpoint: { max: 484, min: 0 },
 			items: 1,
 		},
 	};
 	return (
-		<Box w={'full'} h={'400px'} px={10} my={10}>
+		<Box w={'full'} h={'400px'} px={{ base: 4, md: 10 }} my={10}>
 			<Carousel responsive={responsive}>
 				{isTvtopRated.map(el => (
 					<Card w={'full'} h={'400px'} key={el.id} maxW='sm'>
